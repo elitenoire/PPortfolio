@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+    
+}
+body {
+    width: 100%;
+    margin: 0px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+[class*="col-"] {
+    float: left;
+    position: relative;
+    /*padding: 100px;*/
+    /*border: 1px solid red;*/
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+section::after { /* use section for row or <div class="row"></div>*/
+    content: "";
+    clear: both;
+    display: table;
+}
+header {
+    padding-left: 2em;
+    padding-right: 2em;
+    height:10vh;
+    background-color: transparent;
+    
+}
+#home-page {
+    height: 100%;    
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    background: linear-gradient(to bottom, #3494e6,#26d0ce , #ec6ead);
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    background: #ffffff;
+    
+}
+#top-nav {
+    text-align: center;
+}
+#top-nav li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0 0 3em;
+    font-size: 160%;
+    color: #252233;
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    position: relative;
+    right: 30px;
+}
+#top-nav a{
+    text-decoration: none;
+}
+
+li > a:hover {
+    background: #ffa6a6;
+    color: black;
+    border-radius: 10%;
+    padding: 15px;
+    font-size: 30px;
+    opacity: 0.5;
+}
+a:visited {
+    color: #252233;
+}
+.main-view {
+    height: 65vh;
+    
+    padding: 10%;
+    background-image: url("../images/bulb5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.banner-text {
+    
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 0.5;
+    color: #252233;
+    text-align: right;
+    margin-top: -80px;
+    
+}
+.banner-text-poss {
+    font-weight: 600;
+    font-size: 50px;
+    
+}
+#banner-text-web {
+    font-weight: 700;
+    font-size: 80px;
+
+}
+
+.intro-text {
+    height:25vh;
+}
+
+.intro-text p{
+    padding-left: 8%;
+    font-family: 'Signika', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #252233;
+    /*position: relative;*/
+    /*right: 20px;*/
+}
+
+#about-me {
+    height: 100%;
+    background: linear-gradient(to bottom, #e55d87,#02AAB0, #5fc3e4);
+    
+}
+#work-life {
+    height: 100%;
+    background: linear-gradient(to bottom, #77a1d3, #79cbca, #e684ae);
+}
+#contact-me {
+    height: 100%;
+      background: linear-gradient(to bottom, #dd5e89, #4cb8c4, #3494e6);
+}
